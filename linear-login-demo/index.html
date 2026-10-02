@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Login Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="login-card">
+    <h1>账号登录</h1>
+    <p class="subtitle">Linear × GitHub 工作流演示业务</p>
+
+    <form id="login-form">
+      <label for="email">邮箱</label>
+      <input id="email" name="email" type="email" autocomplete="username" required />
+
+      <label for="password">密码</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="6" />
+
+      <button id="login-button" type="submit">登录</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </form>
+
+    <section class="demo-account">
+      <strong>测试账号</strong>
+      <span>demo@example.com / 123456</span>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
