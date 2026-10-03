@@ -4,6 +4,10 @@ const form = document.querySelector("#login-form");
 const button = document.querySelector("#login-button");
 const message = document.querySelector("#message");
 
+button.addEventListener("click", () => {
+  console.log("[analytics]", "login_button_click", {});
+});
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
